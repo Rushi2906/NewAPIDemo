@@ -115,6 +115,7 @@ namespace NewAPIDemo.DAL
                 sqlDatabase.AddInParameter(dbCommand, "@Password", SqlDbType.VarChar, model.Password);
                 sqlDatabase.AddInParameter(dbCommand, "@ConfirmPassword", SqlDbType.VarChar, model.ConfirmPassword);
                 sqlDatabase.AddInParameter(dbCommand, "@Email", SqlDbType.VarChar, model.Email);
+                sqlDatabase.AddInParameter(dbCommand, "@DOB", SqlDbType.DateTime, model.DOB);
 
                 if (Convert.ToBoolean(sqlDatabase.ExecuteNonQuery(dbCommand)))
                 {

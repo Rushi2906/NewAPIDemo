@@ -95,13 +95,13 @@ namespace NewAPIDemo.Controllers
             if (isSuccess)
             {
                 response.Add("status", true);
-                response.Add("message", "Data Found");
+                response.Add("message", "Data Added");
                 return Ok(response);
             }
             else
             {
                 response.Add("status", false);
-                response.Add("message", "Data Not Found");
+                response.Add("message", "Something Wrong");
                 return NotFound(response);
             }
         }
